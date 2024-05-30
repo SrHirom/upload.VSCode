@@ -22,7 +22,7 @@ int main() {
         return 1;
     }
 
-    for (i = 0; i < num_itens; ) {  // Note the removal of i++ from the for loop header
+    for (i = 0; i < num_itens; ) { 
         int id_duplicado = 0;
 
         printf("\nItem %d:\n", i + 1);
@@ -39,7 +39,7 @@ int main() {
         }
 
         if (id_duplicado) {
-            continue;  // Skip the rest of the loop and ask for the ID again
+            continue; 
         }
 
         printf("Nome: ");
@@ -53,8 +53,7 @@ int main() {
 
         itens[i].total_item = itens[i].unitario * itens[i].qtde;
         total_final += itens[i].total_item;
-
-        i++;  // Increment i here after successfully adding an item
+        i++; 
     }
 
     printf("\nCODIGO\tNOME\t\tQTDE\tUNIT\tTOTAL\n");
